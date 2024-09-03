@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Criando uma aventura</title>
+</head>
+<body>
+    
+<main> 
+
+<div class="passo ativo" id="passo-0">
+    <img src="cenario-passo0.webp" alt="Cenário Passo 0">
+    <p>Você começou uma nova aventura em busca de um tesouro e tem que escolher um lado. Você vai para a esquerda ou para a direita?</p>
+
+    <button class="btn-proximo" data-proximo="1"> Ir para a esquerda </button>
+    <button class="btn-proximo" data-proximo="2"> Ir para a direita </button>
+</div>
+
+<div class="passo" id="passo-1">
+    <p>Você chegou em frente a uma rocha, o que pretende fazer agora?</p>
+    <button class="btn-proximo" data-proximo="4"> Continuar para a esquerda </button>
+    <button class="btn-proximo" data-proximo="3"> Desviar e seguir em frente </button>
+</div>
+
+<div class="passo" id="passo-2">
+    <p>Você encontrou uma árvore que atrapalhou seu caminho, o que quer fazer?</p>
+    <button class="btn-proximo" data-proximo="3"> Desviar para a esquerda </button>
+    <button class="btn-proximo" data-proximo="7"> Desviar para a direita </button>
+</div>
+
+<div class="passo" id="passo-3">
+    <p>Você está em frente a dois caminhos, o que você pretende fazer?</p>
+    <button class="btn-proximo" data-proximo="5"> Ir para o caminho da esquerda </button>
+    <button class="btn-proximo" data-proximo="6"> Ir para o caminho da direita </button>
+</div>
+
+<div class="passo" id="passo-4">
+    <p>Você caiu em um precipício e morreu. Tente mais uma vez</p>
+    <button class="btn-proximo" data-proximo="0"> Voltar ao início </button>
+</div>
+
+<div class="passo" id="passo-5">
+    <p>Você achou o baú do tesouro e conseguiu o que queria. Parabéns </p>
+    
+</div>
+
+<div class="passo" id="passo-6">
+    <p>Você se perdeu na floresta não conseguiu achar o tesouro</p>
+</div>
+
+<div class="passo" id="passo-7">
+    <p>Você achou um caminho sem Volta</p>
+    <button class="btn-proximo" data-proximo="2"> Voltar </button>
+</div>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
